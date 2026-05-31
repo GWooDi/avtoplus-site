@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW AUTO PLUS | Преміальний автосервіс у Калуші</title>
+  <meta name="description" content="СТО NEW AUTO PLUS у Калуші: комп'ютерна діагностика, ремонт ходової, ТО, заміна оливи, ремонт двигуна. Запис на сервіс за телефоном +38 (097) 232-10-08.">
+  <meta name="keywords" content="СТО Калуш, автосервіс Калуш, NEW AUTO PLUS, ремонт авто, діагностика авто, заміна оливи, ремонт ходової">
+  <meta name="theme-color" content="#0b0d10">
+  <meta property="og:title" content="NEW AUTO PLUS | Швидкий та якісний ремонт вашого авто">
+  <meta property="og:description" content="Професійне обслуговування авто з 2017 року. Сучасне обладнання, перевірені запчастини, гарантія на роботи.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://static.wixstatic.com/media/4b0c1e_47754651fa314324bbc3be53a7e68081%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4b0c1e_47754651fa314324bbc3be53a7e68081%7Emv2.jpg">
+  <link rel="preconnect" href="https://static.wixstatic.com">
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --bg-soft: #11151a;
+      --panel: #171c22;
+      --panel-2: #f4f1ec;
+      --text: #f7f7f4;
+      --muted: #aeb6bf;
+      --dark-text: #14171b;
+      --line: rgba(255, 255, 255, .12);
+      --accent: #ff7a1a;
+      --accent-2: #d93d24;
+      --blue: #2b74ff;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .35);
+      --radius: 8px;
+      --container: min(1160px, calc(100% - 40px));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(8, 10, 12, .72);
+      backdrop-filter: blur(18px);
+      transition: background .3s ease, box-shadow .3s ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(8, 10, 12, .94);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, .25);
+    }
+
+    .nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: max-content;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      flex: 0 0 auto;
+      filter: drop-shadow(0 10px 24px rgba(255, 122, 26, .22));
+    }
+
+    .brand-name {
+      display: grid;
+      gap: 0;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .brand-name span:first-child {
+      font-size: .76rem;
+      color: var(--muted);
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .brand-name span:last-child {
+      font-size: 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: rgba(255, 255, 255, .78);
+      font-size: .95rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 8px 0;
+      transition: color .2s ease;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: right .22s ease;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .nav-links a:hover::after {
+      right: 0;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .phone-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 0 15px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 999px;
+      color: #fff;
+      transition: border-color .2s ease, transform .2s ease;
+      white-space: nowrap;
+    }
+
+    .phone-pill:hover {
+      border-color: rgba(255, 122, 26, .65);
+      transform: translateY(-1px);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 6px;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      margin: 5px auto;
+      background: #fff;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .menu-open .menu-toggle span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-open .menu-toggle span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-open .menu-toggle span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: grid;
+      align-items: center;
+      padding: 116px 0 72px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(5, 6, 8, .92), rgba(5, 6, 8, .66) 45%, rgba(5, 6, 8, .28)),
+        linear-gradient(180deg, rgba(5, 6, 8, .35), rgba(5, 6, 8, .88)),
+        url("https://static.wixstatic.com/media/4b0c1e_47754651fa314324bbc3be53a7e68081%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4b0c1e_47754651fa314324bbc3be53a7e68081%7Emv2.jpg") center / cover no-repeat;
+      z-index: -2;
+      transform: scale(1.03);
+      animation: slowZoom 16s ease-out forwards;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 160px;
+      background: linear-gradient(180deg, transparent, var(--bg));
+      z-index: -1;
+    }
+
+    @keyframes slowZoom {
+      to {
+        transform: scale(1);
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      gap: 56px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      color: #ffd1ad;
+      font-size: .84rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 38px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin-bottom: 22px;
+      font-size: clamp(3rem, 8vw, 6.7rem);
+      line-height: .88;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .text-accent {
+      color: var(--accent);
+    }
+
+    .hero-copy {
+      max-width: 640px;
+      margin-bottom: 30px;
+      color: #d9dee4;
+      font-size: clamp(1.02rem, 1.8vw, 1.22rem);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      align-items: center;
+    }
+
+    .btn {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 22px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-weight: 850;
+      cursor: pointer;
+      transition: transform .22s ease, box-shadow .22s ease, background .22s ease, border-color .22s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      color: #111;
+      background: linear-gradient(135deg, #ffb15d, var(--accent) 55%, #e8562c);
+      box-shadow: 0 18px 44px rgba(255, 122, 26, .24);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 24px 60px rgba(255, 122, 26, .35);
+    }
+
+    .btn-ghost {
+      color: #fff;
+      background: rgba(255, 255, 255, .08);
+      border-color: rgba(255, 255, 255, .18);
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, .38);
+      background: rgba(255, 255, 255, .12);
+    }
+
+    .hero-panel {
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: var(--radius);
+      background: rgba(15, 18, 22, .78);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-panel-top {
+      padding: 24px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero-panel strong {
+      display: block;
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+
+    .hero-panel span {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .hero-stats div {
+      padding: 16px;
+      border-right: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .hero-stats div:last-child {
+      border-right: 0;
+    }
+
+    .hero-stats b {
+      display: block;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .hero-stats small {
+      color: var(--muted);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: 22px;
+      translate: -50% 0;
+      width: 26px;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 999px;
+    }
+
+    .scroll-cue::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      width: 4px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      translate: -50% 0;
+      animation: cue 1.4s infinite;
+    }
+
+    @keyframes cue {
+      70% {
+        opacity: .2;
+        transform: translateY(14px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+    }
+
+    section {
+      padding: 94px 0;
+      position: relative;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 560px) minmax(260px, 1fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+
+    .section-kicker {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-weight: 850;
+      text-transform: uppercase;
+      font-size: .82rem;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(2.2rem, 4vw, 4rem);
+      line-height: .98;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .advantages {
+      background: linear-gradient(180deg, var(--bg), #111418);
+    }
+
+    .adv-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .adv-card, .service-card, .review-card, .offer-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .055), rgba(255, 255, 255, .025));
+      box-shadow: 0 18px 56px rgba(0, 0, 0, .16);
+      transition: transform .24s ease, border-color .24s ease, background .24s ease;
+    }
+
+    .adv-card {
+      min-height: 196px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .adv-card:hover, .service-card:hover, .review-card:hover, .offer-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 122, 26, .46);
+      background: linear-gradient(180deg, rgba(255, 122, 26, .09), rgba(255, 255, 255, .025));
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background: rgba(255, 122, 26, .12);
+      color: var(--accent);
+    }
+
+    .icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .adv-card h3, .service-card h3, .offer-card h3 {
+      margin: 18px 0 8px;
+      font-size: 1.1rem;
+    }
+
+    .adv-card p, .service-card p, .offer-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .services {
+      background: #f5f2ed;
+      color: var(--dark-text);
+    }
+
+    .services .section-kicker {
+      color: #c94e18;
+    }
+
+    .services .section-head p {
+      color: #5e6770;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-color: rgba(20, 23, 27, .1);
+      overflow: hidden;
+      color: var(--dark-text);
+    }
+
+    .service-card:hover {
+      background: #fff;
+      border-color: rgba(217, 61, 36, .36);
+    }
+
+    .service-image {
+      aspect-ratio: 16 / 11;
+      overflow: hidden;
+      background: #20252b;
+    }
+
+    .service-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .service-body {
+      padding: 22px;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(20, 23, 27, .1);
+    }
+
+    .price {
+      font-size: 1.22rem;
+      font-weight: 900;
+      color: #d84b22;
+      white-space: nowrap;
+    }
+
+    .mini-link {
+      font-size: .9rem;
+      font-weight: 850;
+      color: #111;
+    }
+
+    .about {
+      background:
+        linear-gradient(180deg, rgba(11, 13, 16, .96), rgba(11, 13, 16, .92)),
+        url("https://static.wixstatic.com/media/74f558_bad78159c4444a1989bec6a6ac74c751~mv2_d_5616_3744_s_4_2.jpg/v1/fill/w_1100,h_720,al_c,q_82,usm_0.66_1.00_0.01,enc_avif,quality_auto/74f558_bad78159c4444a1989bec6a6ac74c751~mv2_d_5616_3744_s_4_2.jpg") center / cover fixed;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .about-copy p {
+      color: #c8d0d8;
+      margin-bottom: 18px;
+    }
+
+    .about-list {
+      display: grid;
+      gap: 10px;
+      margin: 26px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #eef2f5;
+    }
+
+    .about-list li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      flex: 0 0 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(255, 122, 26, .12);
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 14px;
+    }
+
+    .media-tile {
+      min-height: 260px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .12);
+      box-shadow: var(--shadow);
+      background: #20242a;
+      position: relative;
+    }
+
+    .media-tile:nth-child(2) {
+      margin-top: 42px;
+    }
+
+    .media-tile img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .media-caption {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 6px;
+      background: rgba(8, 10, 12, .7);
+      backdrop-filter: blur(14px);
+      font-weight: 800;
+    }
+
+    .reviews {
+      background: #101319;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .review-card {
+      padding: 22px;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stars {
+      color: #ffb545;
+      font-size: 1rem;
+      letter-spacing: 0;
+      margin-bottom: 15px;
+    }
+
+    .review-card p {
+      color: #d8dee5;
+      font-size: .95rem;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      color: #fff;
+      font-weight: 850;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #17120d;
+      font-weight: 950;
+    }
+
+    .offers {
+      background: linear-gradient(135deg, #f6f3ee 0%, #fff 48%, #eef4ff 100%);
+      color: var(--dark-text);
+    }
+
+    .offers .section-head p {
+      color: #5e6770;
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .offer-card {
+      background: rgba(255, 255, 255, .82);
+      border-color: rgba(20, 23, 27, .1);
+      padding: 26px;
+      color: var(--dark-text);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offer-card::after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      top: -60px;
+      width: 160px;
+      height: 160px;
+      border: 26px solid rgba(255, 122, 26, .12);
+      border-radius: 50%;
+    }
+
+    .offer-tag {
+      display: inline-flex;
+      margin-bottom: 16px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255, 122, 26, .13);
+      color: #b83f13;
+      font-weight: 900;
+      font-size: .82rem;
+    }
+
+    .offer-card p {
+      color: #5e6770;
+    }
+
+    .contact {
+      padding-bottom: 0;
+      background: var(--bg);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 14px;
+    }
+
+    .info-box {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .025));
+    }
+
+    .info-box h3 {
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .info-box p, .info-box a {
+      color: #d7dde4;
+    }
+
+    .social-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .social-btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 6px;
+      font-weight: 850;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(255, 255, 255, .06);
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .social-btn:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .booking-form {
+      padding: 28px;
+      border: 1px solid rgba(255, 122, 26, .24);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .035));
+      box-shadow: var(--shadow);
+    }
+
+    .form-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .form-title h3 {
+      margin: 0;
+      font-size: 1.55rem;
+    }
+
+    .form-title span {
+      color: #ffd1ad;
+      font-size: .9rem;
+      font-weight: 800;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: #d9dee4;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 6px;
+      background: rgba(8, 10, 12, .62);
+      color: #fff;
+      padding: 12px 14px;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: rgba(255, 122, 26, .74);
+      box-shadow: 0 0 0 4px rgba(255, 122, 26, .12);
+    }
+
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+    }
+
+    select option {
+      color: #111;
+    }
+
+    .form-note {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    .form-success {
+      display: none;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 6px;
+      background: rgba(38, 187, 119, .12);
+      color: #96efc6;
+      border: 1px solid rgba(38, 187, 119, .28);
+    }
+
+    .map-band {
+      margin-top: 72px;
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(90deg, rgba(9, 11, 14, .92), rgba(9, 11, 14, .6)),
+        url("https://static.wixstatic.com/media/4b0c1e_b73dc1c6793b440a90ba960b99bcfca7~mv2.jpg/v1/crop/x_0,y_0,w_1277,h_912/fill/w_1200,h_560,al_c,q_82,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025-07-10%2014_27_21.jpg") center / cover no-repeat;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .map-band-content {
+      width: var(--container);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .map-band h2 {
+      max-width: 620px;
+      font-size: clamp(2rem, 4vw, 3.6rem);
+    }
+
+    .footer {
+      padding: 28px 0;
+      background: #080a0c;
+      color: #929aa4;
+      font-size: .92rem;
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1040px) {
+      .nav-links {
+        position: fixed;
+        inset: 76px 0 auto;
+        display: grid;
+        gap: 0;
+        padding: 18px 20px 24px;
+        background: rgba(8, 10, 12, .98);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        transform: translateY(-120%);
+        transition: transform .25s ease;
+      }
+
+      .menu-open .nav-links {
+        transform: translateY(0);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-grid, .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel {
+        max-width: 520px;
+      }
+
+      .adv-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .service-grid, .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      :root {
+        --container: min(100% - 28px, 1160px);
+      }
+
+      .nav {
+        height: 70px;
+      }
+
+      .nav-links {
+        inset-block-start: 70px;
+      }
+
+      .brand-name span:last-child {
+        font-size: .92rem;
+      }
+
+      .phone-pill {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 116px 0 58px;
+      }
+
+      h1 {
+        font-size: clamp(2.55rem, 14vw, 4.2rem);
+      }
+
+      .hero-grid {
+        gap: 34px;
+      }
+
+      .cta-row .btn {
+        width: 100%;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .section-head {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .adv-grid, .service-grid, .review-grid, .offer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .adv-card {
+        min-height: 160px;
+      }
+
+      .media-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .media-tile:nth-child(2) {
+        margin-top: 0;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .social-row {
+        grid-template-columns: 1fr;
+      }
+
+      .map-band-content {
+        display: grid;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        scroll-behavior: auto !important;
+        transition-duration: .001ms !important;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "NEW AUTO PLUS",
+      "image": "https://static.wixstatic.com/media/4b0c1e_47754651fa314324bbc3be53a7e68081%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4b0c1e_47754651fa314324bbc3be53a7e68081%7Emv2.jpg",
+      "telephone": ["+380972321008", "+380667670496"],
+      "email": "avtoplus458@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Ринкова 13а",
+        "addressLocality": "Калуш",
+        "postalCode": "77312",
+        "addressCountry": "UA"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:30", "closes": "17:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "14:30"}
+      ],
+      "url": "https://www.newautoplus1.com/"
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="NEW AUTO PLUS">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="Логотип NEW AUTO PLUS">
+          <defs>
+            <linearGradient id="logoGradient" x1="10" x2="54" y1="10" y2="54" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffb15d"></stop>
+              <stop offset=".52" stop-color="#ff7a1a"></stop>
+              <stop offset="1" stop-color="#d93d24"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M9 40 20 19h24l11 21-5 7H14l-5-7Z" fill="#10141a" stroke="url(#logoGradient)" stroke-width="4"></path>
+          <path d="M20 38h24M24 28h16M15 40h6M43 40h6" stroke="#fff" stroke-width="4" stroke-linecap="round"></path>
+          <circle cx="21" cy="48" r="5" fill="url(#logoGradient)"></circle>
+          <circle cx="43" cy="48" r="5" fill="url(#logoGradient)"></circle>
+        </svg>
+        <span class="brand-name"><span>СТО Калуш</span><span>NEW AUTO PLUS</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Головна навігація">
+        <a href="#advantages">Переваги</a>
+        <a href="#services">Послуги</a>
+        <a href="#about">Про сервіс</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#offers">Акції</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- CONTACTS: змініть номер телефону тут і в секції контактів нижче -->
+        <a class="phone-pill" href="tel:+380972321008" aria-label="Зателефонувати у NEW AUTO PLUS">
+          <span>☎</span> +38 (097) 232-10-08
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Головний екран">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Професійне обслуговування авто з 2017 року</p>
+          <h1>Швидкий та якісний <span class="text-accent">ремонт</span> вашого авто</h1>
+          <p class="hero-copy">NEW AUTO PLUS у Калуші проводить точну діагностику, плановий сервіс і складний ремонт без зайвих робіт. Майстри пояснюють стан авто простими словами, узгоджують кошторис і тримають заявлені терміни.</p>
+          <div class="cta-row">
+            <a href="#booking" class="btn btn-primary">Записатися на діагностику</a>
+            <a href="tel:+380972321008" class="btn btn-ghost">Зателефонувати</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Коротка інформація про сервіс">
+          <div class="hero-panel-top">
+            <div>
+              <strong>8+ років</strong>
+              <span>ремонтуємо та обслуговуємо автомобілі на Заході України</span>
+            </div>
+            <div>
+              <strong>1 година</strong>
+              <span>середній час первинної діагностики більшості вузлів</span>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div><b>Гарантія</b><small>на роботи</small></div>
+            <div><b>ТОП</b><small>запчастини</small></div>
+            <div><b>09:30</b><small>старт дня</small></div>
+          </div>
+        </aside>
+      </div>
+      <span class="scroll-cue" aria-hidden="true"></span>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Чому нам довіряють</p>
+            <h2>Сервіс, де ремонт прозорий</h2>
+          </div>
+          <p>Ми поєднали досвід майстрів, сучасне обладнання та чесну комунікацію: ви розумієте, за що платите, і отримуєте авто у погоджений термін.</p>
+        </div>
+
+        <div class="adv-grid">
+          <article class="adv-card reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M7 21h10"></path></svg></span>
+            <div><h3>Досвід з 2017 року</h3><p>Працюємо з щоденними міськими авто, сімейними кросоверами та комерційним транспортом.</p></div>
+          </article>
+          <article class="adv-card reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="m12 3 7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"></path><path d="m9 12 2 2 4-5"></path></svg></span>
+            <div><h3>Гарантія на роботи</h3><p>Після ремонту ви отримуєте рекомендації та зрозумілий перелік виконаних операцій.</p></div>
+          </article>
+          <article class="adv-card reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M7 20h10M8 20l1-7h6l1 7M9 5a3 3 0 0 1 6 0v3H9V5Z"></path></svg></span>
+            <div><h3>Сертифіковані майстри</h3><p>Команда спеціалізується на діагностиці, ходовій, гальмах, двигунах і плановому ТО.</p></div>
+          </article>
+          <article class="adv-card reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M6 7v10h12V7M9 11h6M9 15h3"></path></svg></span>
+            <div><h3>Сучасне обладнання</h3><p>Комп'ютерна діагностика, підйомники, інструмент для точних робіт і проточки дисків.</p></div>
+          </article>
+          <article class="adv-card reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 8v5l3 2"></path><circle cx="12" cy="12" r="9"></circle></svg></span>
+            <div><h3>Швидкі терміни</h3><p>Після огляду погоджуємо план робіт і не тримаємо авто без потреби.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Наші послуги</p>
+            <h2>Основні роботи та ціни</h2>
+          </div>
+          <p>Ціни вказані як стартові, фінальний кошторис залежить від моделі авто, стану вузлів і вартості запчастин.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://static.wixstatic.com/media/4b0c1e_b73dc1c6793b440a90ba960b99bcfca7~mv2.jpg/v1/crop/x_0,y_0,w_1277,h_912/fill/w_844,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025-07-10%2014_27_21.jpg" alt="Комп'ютерна діагностика авто у сервісі NEW AUTO PLUS" loading="lazy"></div>
+            <div class="service-body">
+              <h3>Комп'ютерна діагностика</h3>
+              <p>Зчитування помилок, перевірка датчиків, електронних систем і коротка консультація за результатами.</p>
+              <div class="price-row">
+                <!-- PRICES: змініть стартову ціну послуги тут -->
+                <span class="price">від 300 грн</span>
+                <a class="mini-link" href="#booking">Запис</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://static.wixstatic.com/media/4b0c1e_7c9baedb99054b13915978ac6219e652~mv2.jpg/v1/fill/w_844,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025-07-10%2013_52_31.jpg" alt="Ремонт ходової частини автомобіля" loading="lazy"></div>
+            <div class="service-body">
+              <h3>Ремонт ходової</h3>
+              <p>Діагностика підвіски, заміна сайлентблоків, ричагів, наконечників і підшипників без зайвих робіт.</p>
+              <div class="price-row">
+                <!-- PRICES: змініть стартову ціну послуги тут -->
+                <span class="price">від 300 грн</span>
+                <a class="mini-link" href="#booking">Запис</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://static.wixstatic.com/media/4b0c1e_1081bed8c63347319d7736240f5d705f~mv2.png/v1/fill/w_452,h_268,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4b0c1e_1081bed8c63347319d7736240f5d705f~mv2.png" alt="Заміна оливи та технічне обслуговування" loading="lazy"></div>
+            <div class="service-body">
+              <h3>Заміна масла та ТО</h3>
+              <p>Моторна олива, фільтри, охолоджуюча рідина, перевірка базових вузлів і підбір якісних матеріалів.</p>
+              <div class="price-row">
+                <!-- PRICES: змініть стартову ціну послуги тут -->
+                <span class="price">від 250 грн</span>
+                <a class="mini-link" href="#booking">Запис</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://static.wixstatic.com/media/74f558_bad78159c4444a1989bec6a6ac74c751~mv2_d_5616_3744_s_4_2.jpg/v1/fill/w_844,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/74f558_bad78159c4444a1989bec6a6ac74c751~mv2_d_5616_3744_s_4_2.jpg" alt="Ремонт двигуна в автосервісі" loading="lazy"></div>
+            <div class="service-body">
+              <h3>Ремонт двигуна</h3>
+              <p>Ремонт ГБЦ, заміна прокладки, обслуговування систем охолодження, подачі повітря та свічок.</p>
+              <div class="price-row">
+                <!-- PRICES: змініть стартову ціну послуги тут -->
+                <span class="price">від 2 500 грн</span>
+                <a class="mini-link" href="#booking">Запис</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="section-kicker">Про сервіс</p>
+          <h2>NEW AUTO PLUS: авто в надійних руках</h2>
+          <p>Автосервіс NEW AUTO PLUS працює у Калуші з 2017 року. За цей час команда сформувала підхід, який цінують власники авто: спочатку точна діагностика, потім чесне пояснення, погодження кошторису і тільки після цього ремонт.</p>
+          <p>Майстри використовують перевірені запчастини та обладнання для ремонту підвіски, гальмівної системи, двигуна й планового технічного обслуговування. Менеджери допомагають підібрати деталі, щоб зекономити ваш час і бюджет.</p>
+          <ul class="about-list">
+            <li>Заміна моторної оливи та фільтрів</li>
+            <li>Ремонт підвіски, гальм і елементів двигуна</li>
+            <li>Комп'ютерна діагностика і консультація майстра</li>
+            <li>Проточка гальмівних дисків та підбір запчастин</li>
+          </ul>
+        </div>
+
+        <div class="media-grid reveal">
+          <figure class="media-tile">
+            <img src="https://static.wixstatic.com/media/4b0c1e_b73dc1c6793b440a90ba960b99bcfca7~mv2.jpg/v1/crop/x_0,y_0,w_1277,h_912/fill/w_844,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025-07-10%2014_27_21.jpg" alt="Робоча зона NEW AUTO PLUS" loading="lazy">
+            <figcaption class="media-caption">Робоча зона та підйомники</figcaption>
+          </figure>
+          <figure class="media-tile">
+            <img src="https://static.wixstatic.com/media/4b0c1e_7c9baedb99054b13915978ac6219e652~mv2.jpg/v1/fill/w_844,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025-07-10%2013_52_31.jpg" alt="Майстри автосервісу за роботою" loading="lazy">
+            <figcaption class="media-caption">Команда майстрів</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Відгуки клієнтів</p>
+            <h2>Репутація, яку видно в деталях</h2>
+          </div>
+          <p>Клієнти повертаються не лише через якість ремонту, а й через нормальне людське ставлення: пояснили, показали, узгодили, зробили.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Приїхав на заміну оливи, а майстер ще й швидко перевірив ходову. Все чітко, без нав'язування зайвих робіт. Дуже адекватний сервіс.</p></div><div class="review-author"><span class="avatar">Й</span> Йосип Пелих</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Після рекомендації друзів записався на діагностику. Дали список робіт, пояснили пріоритети і вклалися у термін. Авто їде відчутно краще.</p></div><div class="review-author"><span class="avatar">Т</span> Тарас Даниленко</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Вперше була на цьому СТО. Майстри спокійно все показали, пояснили, що терміново, а що може зачекати. Відчула себе в безпеці.</p></div><div class="review-author"><span class="avatar">Л</span> Людмила Мазур</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Ремонтували гальма і міняли рідину. Після роботи дали рекомендації, нічого не приховували. Ціна збіглася з тим, що погодили.</p></div><div class="review-author"><span class="avatar">А</span> Андрій Коваль</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Потрібна була комп'ютерна діагностика перед дорогою. Прийняли вчасно, швидко знайшли проблему з датчиком і одразу запропонували рішення.</p></div><div class="review-author"><span class="avatar">О</span> Оксана Гринів</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Заміна сайлентблоків пройшла без сюрпризів. Сподобалося, що старі деталі показали, а не просто сказали: "треба було міняти".</p></div><div class="review-author"><span class="avatar">М</span> Михайло Савчук</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Після ремонту ГБЦ машина працює рівно, витрати зменшилися. Окремий плюс за комунікацію: на кожному етапі тримали в курсі.</p></div><div class="review-author"><span class="avatar">Р</span> Роман Бойко</div></article>
+          <article class="review-card reveal"><div><div class="stars">★★★★★</div><p>Обслуговую тут сімейне авто вже не перший раз. Чисто, організовано, майстри не поспішають "закрити чек", а реально шукають причину.</p></div><div class="review-author"><span class="avatar">Н</span> Наталія Мельник</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers" id="offers">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Спецпропозиції</p>
+            <h2>Вигідно записатися зараз</h2>
+          </div>
+          <p>Акції допомагають швидко перевірити авто, закрити сезонні питання і не відкладати ремонт, який може стати дорожчим.</p>
+        </div>
+
+        <div class="offer-grid">
+          <article class="offer-card reveal">
+            <span class="offer-tag">Діагностика 0 грн</span>
+            <h3>Безкоштовна перевірка при ремонті</h3>
+            <p>Якщо після діагностики ви залишаєте авто на узгоджений ремонт, вартість первинної перевірки зараховується в роботи.</p>
+          </article>
+          <article class="offer-card reveal">
+            <span class="offer-tag">-10% новим клієнтам</span>
+            <h3>Перше знайомство з сервісом</h3>
+            <p>Знижка на роботу майстра для першого візиту: діагностика, ТО, ходова або гальмівна система.</p>
+          </article>
+          <article class="offer-card reveal">
+            <span class="offer-tag">Сезонний чек</span>
+            <h3>Підготовка до поїздок</h3>
+            <p>Огляд ходової, гальм, рідин і базових систем перед дальніми маршрутами чи активним сезоном.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-head" style="display:block;margin-bottom:10px;">
+            <p class="section-kicker">Контакти та запис</p>
+            <h2>Залиште заявку, ми передзвонимо</h2>
+          </div>
+
+          <div class="info-box">
+            <h3>Телефони</h3>
+            <!-- CONTACTS: змініть телефони тут -->
+            <p><a href="tel:+380972321008">+38 (097) 232-10-08</a></p>
+            <p><a href="tel:+380667670496">+38 (066) 767-04-96</a></p>
+            <p><a href="mailto:avtoplus458@gmail.com">avtoplus458@gmail.com</a></p>
+          </div>
+
+          <div class="info-box">
+            <h3>Адреса та графік</h3>
+            <!-- ADDRESS: змініть адресу та графік роботи тут -->
+            <p>вул. Ринкова 13а, м. Калуш, 77312, Україна</p>
+            <p>Пн - Пт: 9:30 - 17:30<br>Сб: 9:30 - 14:30<br>Нд: вихідний</p>
+            <div class="social-row">
+              <!-- CONTACTS: замініть посилання Telegram/Viber на офіційні, якщо вони відрізняються -->
+              <a class="social-btn" href="https://t.me/NewAutoPlus" target="_blank" rel="noopener">Telegram</a>
+              <a class="social-btn" href="viber://chat?number=%2B380972321008">Viber</a>
+              <a class="social-btn" href="https://maps.app.goo.gl/CAeUeiahin8Qyuib9" target="_blank" rel="noopener">Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="booking" aria-label="Форма запису на ремонт">
+          <div class="form-title">
+            <h3>Запис на ремонт</h3>
+            <span>Відповідь у робочий час</span>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Ім'я</label>
+              <input id="name" name="name" type="text" placeholder="Ваше ім'я" required>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" placeholder="+38 (___) ___-__-__" required>
+            </div>
+            <div class="field">
+              <label for="car">Авто</label>
+              <input id="car" name="car" type="text" placeholder="Марка, модель, рік">
+            </div>
+            <div class="field">
+              <label for="service">Послуга</label>
+              <select id="service" name="service" required>
+                <option value="">Оберіть послугу</option>
+                <option>Комп'ютерна діагностика</option>
+                <option>Ремонт ходової</option>
+                <option>Заміна масла та ТО</option>
+                <option>Ремонт двигуна</option>
+                <option>Гальмівна система</option>
+                <option>Потрібна консультація</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Бажана дата</label>
+              <input id="date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="time">Бажаний час</label>
+              <select id="time" name="time">
+                <option>09:30 - 11:00</option>
+                <option>11:00 - 13:00</option>
+                <option>13:00 - 15:00</option>
+                <option>15:00 - 17:30</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Що турбує в авто?</label>
+              <textarea id="message" name="message" placeholder="Опишіть симптоми: звук, помилка на панелі, коли проявляється проблема"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit" style="width:100%;margin-top:16px;">Надіслати заявку</button>
+          <p class="form-note">Форма відкриє підготовлений лист на пошту сервісу. Для термінового запису краще телефонуйте напряму.</p>
+          <div class="form-success" role="status">Заявку підготовлено. Якщо поштовий клієнт не відкрився, зателефонуйте за номером +38 (097) 232-10-08.</div>
+        </form>
+      </div>
+
+      <div class="map-band">
+        <div class="map-band-content reveal">
+          <h2>Зручно заїхати на сервіс у центрі Калуша</h2>
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/CAeUeiahin8Qyuib9" target="_blank" rel="noopener">Прокласти маршрут</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 NEW AUTO PLUS. СТО у Калуші.</span>
+      <span>Швидкий та якісний ремонт вашого авто.</span>
+    </div>
+  </footer>
+
+  <script>
+    const body = document.body;
+    const header = document.querySelector('.site-header');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = body.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        body.classList.remove('menu-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 24);
+    }, { passive: true });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    const bookingForm = document.querySelector('.booking-form');
+    const successMessage = document.querySelector('.form-success');
+
+    bookingForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(bookingForm);
+      const subject = encodeURIComponent('Запис на ремонт NEW AUTO PLUS');
+      const bodyText = encodeURIComponent(
+        `Ім'я: ${data.get('name') || ''}\n` +
+        `Телефон: ${data.get('phone') || ''}\n` +
+        `Авто: ${data.get('car') || ''}\n` +
+        `Послуга: ${data.get('service') || ''}\n` +
+        `Дата: ${data.get('date') || ''}\n` +
+        `Час: ${data.get('time') || ''}\n` +
+        `Коментар: ${data.get('message') || ''}`
+      );
+
+      /* CONTACTS: змініть email сервісу тут, якщо адреса оновиться */
+      window.location.href = `mailto:avtoplus458@gmail.com?subject=${subject}&body=${bodyText}`;
+      successMessage.style.display = 'block';
+      bookingForm.reset();
+    });
+  </script>
+</body>
+</html>
